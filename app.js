@@ -1,18 +1,18 @@
 // We declare the function with the exact name "fromEuroToDollar"
 const fromEuroToDollar = function(valueInEuro) {
-    let valueInDollar = (valueInEuro * 1.07).toFixed(2);
+    let valueInDollar = parseFloat((valueInEuro * 1.07).toFixed(2));
 
     return valueInDollar;
 }
 
 const fromDollarToYen = function(valueInDollar) {
-    let valueInYen = ((valueInDollar / 1.07) * 156.5).toFixed(2);
+    let valueInYen = parseFloat(((valueInDollar / 1.07) * 156.5).toFixed(2));
 
     return valueInYen;
 } 
 
 const fromYenToPound = function(valueInYen) {
-    let valueInPound = ((valueInYen / 156.5) * 0.87).toFixed(2);
+    let valueInPound = parseFloat(((valueInYen / 156.5) * 0.87).toFixed(2));
 
     return valueInPound;
 } 

@@ -40,7 +40,7 @@ test("One yen should be 0.01 pounds", function() {
     // Import the function from app.js
     const { fromYenToPound } = require('./app.js');
 
-    const yens = fromYenToPound(3.5);
+    const pounds = fromYenToPound(3.5);
 
     const expected = 0.02; 
     
